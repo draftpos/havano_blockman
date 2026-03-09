@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "autoname": "field:parent_item",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_item",
+  "description",
+  "date",
+  "blockman",
+  "weight_loss",
+  "carcus",
+  "full_cut",
+  "weight_for_cutting",
+  "sb_items",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_item",
+   "fieldtype": "Link",
+   "label": "Parent Item",
+   "options": "Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "blockman",
+   "fieldtype": "Link",
+   "label": "Blockman",
+   "options": "Blockman",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "weight_loss",
+   "fieldtype": "Float",
+   "label": "Weight Loss"
+  },
+  {
+   "fieldname": "carcus",
+   "fieldtype": "Link",
+   "label": "Carcus",
+   "options": "Item"
+  },
+  {
+   "fieldname": "full_cut",
+   "fieldtype": "Check",
+   "label": "Full Cut or Partial Cut"
+  },
+  {
+   "fieldname": "weight_for_cutting",
+   "fieldtype": "Float",
+   "label": "Weight for Cutting"
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Havano Bundle Item"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Havano Blockman",
+ "name": "Havano Product Bundle",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

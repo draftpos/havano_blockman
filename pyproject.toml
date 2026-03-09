@@ -1,9 +1,9 @@
 [project]
 name = "havano_blockman"
 authors = [
-    { name = "Fortune", email = "fortunemajunya88@gmail.com"}
+    { name = "Fortune", email = "fortunemakunya88@gmail.com"}
 ]
-description = "havano"
+description = "app "
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

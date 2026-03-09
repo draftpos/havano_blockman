@@ -1,8 +1,8 @@
 app_name = "havano_blockman"
 app_title = "Havano Blockman"
 app_publisher = "Fortune"
-app_description = "app "
-app_email = "fortunemakunya88@gmail.com"
+app_description = "havano"
+app_email = "fortunemajunya88@gmail.com"
 app_license = "mit"
 
 # Apps
