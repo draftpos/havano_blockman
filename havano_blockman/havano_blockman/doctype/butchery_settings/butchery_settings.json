@@ -1,0 +1,29 @@
+{
+  "doctype": "DocType",
+  "name": "Butchery Settings",
+  "module": "Havano Blockman",
+  "issingle": 1,
+  "fields": [
+    {
+      "fieldname": "weight_loss_account",
+      "fieldtype": "Link",
+      "label": "Weight Loss Account",
+      "options": "Account",
+      "reqd": 1,
+      "filters": "[['Account', 'root_type', '=', 'Expense'], ['Account', 'is_group', '=', 0]]"
+    },
+    {
+      "fieldname": "warehouse",
+      "fieldtype": "Link",
+      "label": "Default Warehouse",
+      "options": "Warehouse"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1
+    }
+  ]
+}

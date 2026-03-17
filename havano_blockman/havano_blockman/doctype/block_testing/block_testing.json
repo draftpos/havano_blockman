@@ -1,0 +1,169 @@
+{
+    "actions": [],
+    "autoname": "BT-.####",
+    "creation": "2024-01-01 00:00:00",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "carcus",
+     "column_break_tvdc",
+     "date",
+     "column_break_bccc",
+     "blockman",
+     "section_break_row2",
+     "batch_number",
+     "column_break_yftk",
+     "carcus_weight",
+     "column_break_jycp",
+     "weight_loss",
+     "column_break_comp",
+     "company",
+     "section_break_row3",
+     "full_cut",
+     "carcass_cut_weight",
+     "sb_items",
+     "items",
+     "amended_from"
+    ],
+    "fields": [
+     {
+      "fieldname": "carcus",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Carcass",
+      "options": "BMO Bundle",
+      "reqd": 1
+     },
+     {
+      "default": "Today",
+      "fieldname": "date",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Date"
+     },
+     {
+      "fieldname": "blockman",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Blockman",
+      "options": "Blockman"
+     },
+     {
+      "fieldname": "batch_number",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Batch Number",
+      "options": "batches"
+     },
+     {
+      "fieldname": "carcus_weight",
+      "fieldtype": "Float",
+      "label": "Carcass Weight",
+      "read_only": 1
+     },
+     {
+      "fieldname": "weight_loss",
+      "fieldtype": "Float",
+      "label": "Weight Loss",
+      "read_only": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "full_cut",
+      "fieldtype": "Check",
+      "label": "Full Cut"
+     },
+     {
+      "fieldname": "carcass_cut_weight",
+      "fieldtype": "Float",
+      "label": "Carcass Cut Weight",
+      "description": "Weight of carcass being cut this session (partial cut only)"
+     },
+     {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+     },
+     {
+      "fieldname": "column_break_tvdc",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_bccc",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "section_break_row2",
+      "fieldtype": "Section Break"
+     },
+     {
+      "fieldname": "column_break_yftk",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_jycp",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_comp",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "section_break_row3",
+      "fieldtype": "Section Break"
+     },
+     {
+      "fieldname": "sb_items",
+      "fieldtype": "Section Break",
+      "label": "Items"
+     },
+     {
+      "allow_bulk_edit": 1,
+      "allow_in_quick_entry": 1,
+      "fieldname": "items",
+      "fieldtype": "Table",
+      "label": "Items",
+      "options": "Havano Bundle Item",
+      "in_place_edit": 1
+     },
+     {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "no_copy": 1,
+      "options": "Block Testing",
+      "print_hide": 1,
+      "read_only": 1,
+      "search_index": 1
+     }
+    ],
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2026-03-11 00:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Havano Blockman",
+    "name": "Block Testing",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "row_format": "Dynamic",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+   }

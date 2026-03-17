@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:batch_code",
+ "creation": "2026-03-09 11:53:15.736782",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "batches_section",
+  "batch_code",
+  "column_break_nnvf",
+  "batch_name",
+  "column_break_tnpn",
+  "manufacture_date",
+  "column_break_knvm",
+  "expiry_date",
+  "product_details__optional_section",
+  "product_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "batches_section",
+   "fieldtype": "Section Break",
+   "label": "Batches"
+  },
+  {
+   "fieldname": "batch_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_nnvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batch_name",
+   "fieldtype": "Data",
+   "label": "Batch Name"
+  },
+  {
+   "fieldname": "column_break_tnpn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacture_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Manufacture Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_knvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Datetime",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "product_details__optional_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details  (Optional)"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Link",
+   "label": "Product Name ",
+   "options": "BMO Bundle"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-09 20:03:33.504323",
+ "modified_by": "Administrator",
+ "module": "Havano Blockman",
+ "name": "batches",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
